@@ -21,6 +21,25 @@ public class Main {
 
             option = sc.nextInt();
 
+            switch (option){
+                case 1:
+                    MesaggesService.createMessage();
+                    break;
+                case 2:
+                    MesaggesService.listMessage();
+                    break;
+                case 3:
+                    MesaggesService.editMessage();
+                    break;
+                case 4:
+                    MesaggesService.deleteMessage();
+                    break;
+                case 5:
+                    break;
+                default:
+                    break;
+            }
+
         }while (option != 5);
 
     }
